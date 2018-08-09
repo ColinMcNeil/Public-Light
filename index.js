@@ -10,7 +10,6 @@ app.use('/', express.static('page'))
 async function tpLink(action) {
   let myTPLink = await tplink.login(process.env.email, process.env.pass, 'cbc226af-8fd2-4fd5-8dc0-cade434dd226')
   let deviceList = await myTPLink.getDeviceList()
-  //console.log(deviceList)
   if (action == 'on') await myTPLink.getLB100("Lampy").transition_light_state(1, 100)
   else await myTPLink.getLB100("Lampy").transition_light_state(0, 0)
 }
@@ -22,6 +21,5 @@ app.get('/off', (req, res) => {
   console.log(req)
   tpLink('off')
 })
-
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
