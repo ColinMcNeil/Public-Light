@@ -1,8 +1,13 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
 
-  <div class="container">
-    <button class="button">Light On</button>
-    <button class="button">Light Off</button>
+  <div id="container">
+    <button class="button" @click="on">Light On</button>
+    <button class="button" @click="off">Light Off</button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+  <script src="index.js"></script>
 </body>

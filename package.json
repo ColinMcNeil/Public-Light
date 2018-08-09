@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Colin McNeil",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.0.0",
+    "es6-promise": "^4.2.4",
     "express": "^4.16.3",
-    "tplink-cloud-api": "^0.3.1"
+    "isomorphic-fetch": "^2.2.1",
+    "tplink-cloud-api": "^0.3.1",
+    "vue-resource": "^1.5.1"
   },
   "devDependencies": {
     "uuid4": "^1.0.0"
