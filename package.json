@@ -1,0 +1,19 @@
+{
+  "name": "light-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Colin McNeil",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "tplink-cloud-api": "^0.3.1"
+  },
+  "devDependencies": {
+    "uuid4": "^1.0.0"
+  }
+}
